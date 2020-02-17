@@ -128,8 +128,12 @@
         border-width: 0;
         background-color: $blue;
         outline: none;
+        transition: all 0.3s;
         img {
           margin-top: 3px;
+        }
+        &:hover {
+          opacity: 0.7;
         }
       }
     }
@@ -183,3 +187,41 @@
 }
 
 // __________________--INFO--____________________
+
+// __________________++ADVANTAGES++____________________
+
+.advantages {
+  &__wrapper {
+    display: flex;
+    margin-top: 185px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  &__item {
+    height: 400px;
+    width: 360px;
+    transition: all 0.3s;
+    &-img {
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+    &-title {
+      margin-bottom: 30px;
+      font-size: 24px;
+      font-weight: 400;
+    }
+    &-text {
+      width: 300px;
+      margin: 0 auto;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    &:hover {
+      background-color: #fff;
+      box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+
+// __________________--ADVANTAGES--____________________
