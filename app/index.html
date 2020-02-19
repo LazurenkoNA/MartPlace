@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>MartPlace</title>
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -17,11 +18,9 @@
       <div class="container">
         <div class="header__top-wrapper">
           <div class="header__top-logo">
-            <a href="#" class="header__top-logo-item-1">
+            <a class="header__top-logo-item" href="#">
               <img src="images/header/logo.png" alt="">
-            </a>
-            <a href="#" class="header__top-logo-item-2">
-              <img src="images/header/martplace.png" alt="">
+              <span>Mart</span>Place
             </a>
           </div>
           <div class="header__top-links">
@@ -29,14 +28,17 @@
               <a class="header__top-button-item" href="#">Become a Seller</a>
             </div>
             <div class="header__top-notifications">
-              <a class="header__top-notifications-item-1" href="#">
-                <img src="images/icons/bell.png" alt="">
+              <a class="header__top-notifications-item-1 notifications__ball" href="#">
+                <span class="lnr lnr-alarm"></span>
+                <a class="notifications__ball-item-1 ball-item" href="#">25</a>
               </a>
-              <a class="header__top-notifications-item-2" href="#">
-                <img src="images/icons/mail.png" alt="">
+              <a class="header__top-notifications-item-2 notifications__ball" href="#">
+                <span class="lnr lnr-envelope"></span>
+                <a class="notifications__ball-item-2 ball-item" href="#">6</a>
               </a>
-              <a class="header__top-notifications-item-3" href="#">
-                <img src="images/icons/basket.png" alt="">
+              <a class="header__top-notifications-item-3 notifications__ball" href="#">
+                <span class="lnr lnr-cart"></span>
+                <a class="notifications__ball-item-3 ball-item" href="#">2</a>
               </a>
             </div>
             <div class="header__top-person">
@@ -79,9 +81,9 @@
           </ul>
           <div class="header__menu-form">
             <form action="">
-              <input class="header__menu-form-input" type="text" placeholder="Search product here..." required>
+              <input class="header__menu-form-input" type="search" placeholder="Search product here..." required>
               <button class="header__menu-form-search" type="submit">
-                <img src="images/icons/magnifier.png" alt="">
+                <span class="lnr lnr-magnifier"></span>
               </button>
             </form>
           </div>
