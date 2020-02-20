@@ -202,6 +202,7 @@
 // __________________++INFO++____________________
 
 .info {
+  position: relative;
   text-align: center;
   background-color: $blue-bg;
   color: $white;
@@ -247,6 +248,94 @@
 
 // __________________--INFO--____________________
 
+// __________________++SEARCH++____________________
+
+.search-item {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  border-radius: 6px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.info__search {
+  &-smoke-item-1 {
+    bottom: -50px;
+    max-width: 1080px;
+    min-height: 135px;
+  }
+  &-smoke-item-2 {
+    bottom: -65px;
+    max-width: 1110px;
+    min-height: 135px;
+  }
+  &-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: -80px;
+    max-width: 1140px;
+    min-height: 135px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    opacity: 1;
+    z-index: 2;
+  }
+  &-input {
+    margin-left: 40px;
+    &-item {
+      min-width: 805px;
+      min-height: 55px;
+      padding-left: 30px;
+      border-radius: 4px;
+      border-width: 1px;
+      border-color: #dcdcdc;
+      font-size: 16px;
+      font-weight: 400;
+      outline: none;
+    }
+  }
+  &-select {
+    position: relative;
+    color: $dark-grey;
+    &-item {
+      position: absolute;
+      top: -27px;
+      right: 10px;
+      display: flex;
+      min-width: 200px;
+      min-height: 55px;
+      border-left: 1px solid #dcdcdc;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    span {
+      margin-left: 30px;
+    }
+  }
+  &-button {
+    display: flex;
+    margin-right: 40px;
+    width: 223px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand-Regular";
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    background-color: $blue;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+// __________________--SEARCH--____________________
+
 // __________________++ADVANTAGES++____________________
 
 .advantages {
@@ -282,5 +371,9 @@
     }
   }
 }
+
+// __________________--ADVANTAGES--____________________
+
+// __________________++ADVANTAGES++____________________
 
 // __________________--ADVANTAGES--____________________
