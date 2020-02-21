@@ -59,7 +59,7 @@
     &-notifications {
       position: relative;
       display: flex;
-      font-size: 20px;
+
       &-item-1 {
         margin-right: 30px;
         .notifications__ball-item {
@@ -89,14 +89,15 @@
       z-index: 2;
     }
     .notifications__ball {
+      color: #000;
       &-item-1 {
         top: -8px;
-        right: 115px;
+        right: 113px;
         background-color: $red;
       }
       &-item-2 {
         top: -8px;
-        right: 68px;
+        right: 64px;
         padding: 3px 7px;
         background-color: $green;
       }
@@ -105,6 +106,9 @@
         right: 15px;
         padding: 3px 7px;
         background-color: $blue;
+      }
+      .lnr {
+        font-size: 20px;
       }
     }
 
@@ -331,6 +335,10 @@
     border-radius: 4px;
     outline: none;
     cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
 
@@ -339,6 +347,7 @@
 // __________________++ADVANTAGES++____________________
 
 .advantages {
+  padding-bottom: 120px;
   &__wrapper {
     display: flex;
     margin-top: 185px;
@@ -374,6 +383,141 @@
 
 // __________________--ADVANTAGES--____________________
 
-// __________________++ADVANTAGES++____________________
+// __________________++PRODUCT++____________________
 
-// __________________--ADVANTAGES--____________________
+.product {
+  background-color: $smoke;
+  margin: 0;
+  &__wrapper {
+    padding: 120px 0;
+  }
+  &__top {
+    display: flex;
+    padding: 30px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    justify-content: space-between;
+    align-items: center;
+    &-title {
+      font-size: 30px;
+      line-height: 28px;
+    }
+    &-arrows {
+      position: relative;
+      min-width: 110px;
+      min-height: 45px;
+      border-radius: 50px;
+      background-color: $arrows;
+      &-left {
+        right: 75px;
+      }
+      &-right {
+        right: 17px;
+      }
+      .top-arrows {
+        display: inline-block;
+        position: absolute;
+        top: 8px;
+        bottom: 0;
+
+        margin: 0 auto;
+        height: 16px;
+        width: 16px;
+        color: #fff;
+      }
+    }
+  }
+  &__item {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    &-image {
+      background-color: $dark-grey;
+      min-width: 555px;
+      min-height: 450px;
+    }
+    &-info {
+      margin-top: 35px;
+      padding: 0 50px;
+      &-title {
+        margin-bottom: 15px;
+        font-family: "Quicksand-Medium";
+        font-size: 24px;
+      }
+      &-person {
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        &-avatar {
+          height: 30px;
+          width: 30px;
+          margin-right: 9px;
+          background-color: $arrows;
+          border-radius: 50%;
+        }
+        &-name {
+          margin-right: 20px;
+        }
+        &-platform {
+          .icon-wordpress {
+            margin-right: 6px;
+          }
+          color: $arrows;
+        }
+      }
+      &-text {
+        color: $dark-grey;
+        font-size: 16px;
+      }
+      &-properties {
+        padding: 35px 0;
+        border-bottom: 1px solid $smoke;
+        display: flex;
+        align-items: center;
+
+        &-category {
+          padding: 0 15px;
+          margin-right: 8px;
+          border-radius: 50px;
+          color: $placeholder;
+          background-color: $smoke;
+        }
+      }
+      &-data {
+        position: relative;
+        margin: 25px 0;
+        display: flex;
+        align-items: center;
+        &-prise {
+          margin-right: 20px;
+          padding: 0 20px;
+          color: #fff;
+          font-family: "Quicksand-Medium";
+          font-size: 15px;
+          border-radius: 50px;
+          background-color: $blue;
+        }
+        &-likes {
+          margin-right: 20px;
+          span {
+            color: $arrows;
+          }
+        }
+        &-buys {
+          color: $blue;
+        }
+        &-stars {
+          position: absolute;
+          right: 10px;
+        }
+      }
+    }
+  }
+}
+
+// __________________--PRODUCT--____________________
