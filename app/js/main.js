@@ -5,5 +5,9 @@ $(function() {
     spacing: "3px",
     starWidth: "15px"
   });
-
+  $(".product-slider").slick({
+    prevArrow: $(".product__top-arrows-left"),
+    nextArrow: $(".product__top-arrows-right"),
+    arrows: true
+  });
 });
