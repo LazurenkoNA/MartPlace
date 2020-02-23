@@ -36,10 +36,9 @@
     url("../fonts/icomoon.svg?abbn4s#icomoon") format("svg");
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
+  font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -52,6 +51,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-ellipsis-v:before {
+  content: "\f142";
+}
 .icon-wordpress:before {
   content: "\f19a";
 }

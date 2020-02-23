@@ -521,3 +521,209 @@
 }
 
 // __________________--PRODUCT--____________________
+
+// __________________++CONTENT++____________________
+
+.content {
+  background-color: $white-2;
+  margin: 0;
+  &__wrapper {
+    padding: 120px 0;
+  }
+  &__top {
+    display: flex;
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    justify-content: space-between;
+    align-items: center;
+    &-title {
+      font-size: 30px;
+      line-height: 28px;
+    }
+    &-filter {
+      display: flex;
+      justify-content: space-between;
+      &-text {
+        color: $grey;
+      }
+      &-points {
+        .icon-ellipsis-v {
+          display: block;
+          padding-top: 5px;
+          margin-left: 25px;
+          font-size: 20px;
+          color: $light-blue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &__inner {
+    &-btn {
+      margin-bottom: 20px;
+      padding: 30px;
+      background-color: #fff;
+      box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+      border-radius: 4px;
+      &-item {
+        margin-right: 6px;
+        padding: 10px 20px;
+        background-color: $smoke;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        transition: all 0.3s;
+        &:hover {
+          background-color: $blue;
+          color: #fff;
+        }
+      }
+    }
+    &-box {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    max-width: 365px;
+    min-height: 230px;
+    margin: 30px 0;
+    background-color: #fff;
+    &-image {
+      height: 230px;
+      border-radius: 4px;
+      &:hover {
+        background-image: -moz-linear-gradient(
+          180deg,
+          rgb(6, 116, 236) 0%,
+          rgb(61, 94, 215) 46%,
+          rgb(115, 71, 193) 100%
+        );
+      }
+    }
+    &-info {
+      &-title {
+        padding: 0 30px;
+        margin-top: 20px;
+        margin-bottom: 13px;
+        font-family: "Quicksand-Medium";
+        font-size: 20px;
+        font-weight: 500;
+      }
+      &-person {
+        padding: 0 30px;
+        display: flex;
+        margin-bottom: 25px;
+        align-items: center;
+
+        &-avatar {
+          height: 30px;
+          width: 30px;
+          margin-right: 9px;
+          background-color: $arrows;
+          border-radius: 50%;
+        }
+        &-name {
+          margin-right: 20px;
+        }
+        &-platform {
+          .icon-wordpress {
+            margin-right: 6px;
+          }
+          color: $arrows;
+        }
+      }
+      &-text {
+        padding: 0 30px;
+        color: $dark-grey;
+        font-size: 16px;
+      }
+      &-data {
+        position: relative;
+        padding: 0 30px;
+        position: relative;
+        margin-top: 25px;
+        display: flex;
+        border-top: 1px solid #ececec;
+        align-items: center;
+        &-prise {
+          margin: 15px 20px 15px 0;
+          padding: 0 20px;
+          color: $blue;
+          font-family: "Quicksand-Medium";
+          font-size: 15px;
+          border-radius: 50px;
+          background-color: $smoke;
+          transition: all 0.3s;
+          &:hover {
+            background-color: $blue;
+            color: #fff;
+          }
+        }
+        &-likes {
+          display: flex;
+          justify-content: center;
+          margin-right: 20px;
+          span {
+            display: block;
+            margin-top: 6px;
+            margin-right: 5px;
+            color: $arrows;
+          }
+        }
+        &-stars {
+        }
+        &-buys {
+          position: absolute;
+          top: 14px;
+          right: 26px;
+          display: flex;
+          justify-content: flex-end;
+          color: $blue;
+          span {
+            display: block;
+            margin-top: 6px;
+          }
+        }
+      }
+    }
+  }
+  &__btn-item {
+  }
+}
+
+.stars-item {
+}
+// __________________--CONTENT--____________________
+
+.BG_copy_8 {
+  background-image: -moz-linear-gradient(
+    180deg,
+    rgb(6, 116, 236) 0%,
+    rgb(61, 94, 215) 46%,
+    rgb(115, 71, 193) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    180deg,
+    rgb(6, 116, 236) 0%,
+    rgb(61, 94, 215) 46%,
+    rgb(115, 71, 193) 100%
+  );
+  background-image: -ms-linear-gradient(
+    180deg,
+    rgb(6, 116, 236) 0%,
+    rgb(61, 94, 215) 46%,
+    rgb(115, 71, 193) 100%
+  );
+  opacity: 0.902;
+  position: absolute;
+  left: 390px;
+  top: 2868px;
+  width: 361px;
+  height: 230px;
+  z-index: 579;
+}
