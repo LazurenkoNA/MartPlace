@@ -32,15 +32,15 @@
             <div class="header__top-notifications">
               <a class="header__top-notifications-item-1 notifications__ball" href="#">
                 <span class="lnr lnr-alarm"></span>
-                <a class="notifications__ball-item-1 ball-item" href="#">25</a>
+                <a class="notifications__ball-alarm ball-item" href="#">25</a>
               </a>
               <a class="header__top-notifications-item-2 notifications__ball" href="#">
                 <span class="lnr lnr-envelope"></span>
-                <a class="notifications__ball-item-2 ball-item" href="#">6</a>
+                <a class="notifications__ball-mail ball-item" href="#">6</a>
               </a>
               <a class="header__top-notifications-item-3 notifications__ball" href="#">
                 <span class="lnr lnr-cart"></span>
-                <a class="notifications__ball-item-3 ball-item" href="#">2</a>
+                <a class="notifications__ball-basket ball-item" href="#">2</a>
               </a>
             </div>
             <div class="header__top-person">
@@ -63,7 +63,7 @@
     </div>
     <div class="header__menu">
       <div class="container">
-        <div class="header__menu-inner">
+        <nav class="header__menu-inner">
           <ul class="header__menu-list">
             <li>
               <a class="header__menu-list-item" href="#">home </a>
@@ -89,363 +89,505 @@
               </button>
             </form>
           </div>
-        </div>
+        </nav>
       </div>
     </div>
   </header>
+  <main>
+    <section class="info">
+      <div class="container">
 
-  <section class="info">
-    <div class="container">
+        <div class="info__search">
+          <div class="info__search-smoke-item-1 search-item"></div>
+          <div class="info__search-smoke-item-2 search-item"></div>
+          <div class="info__search-form search-item">
+            <div class="info__search-input">
+              <input class="info__search-input-item" type="search" placeholder="Search your products...">
+            </div>
+            <!-- <select class="info__search-select" name="" id="">
+              <div class="info__search-select-item">
+                All Categories
+                <span class="lnr lnr-chevron-down"></span>
+              </div>
+            </select> -->
+            <div class="info__search-select">
+              <select class="info__search-select-item" id="type">
+                <option value="0">All Categories</option>
+                <option value="1">Plugins</option>
+                <option value="2">WordPress</option>
+                <option value="3">Site Template</option>
+                <option value="4">PSD Template</option>
+                <option value="5">Joomla</option>
+                <option value="6">User Interface</option>
+                <option value="7">Landing Page</option>
+                <option value="8">Software</option>
 
-      <div class="info__search">
-        <div class="info__search-smoke-item-1 search-item"></div>
-        <div class="info__search-smoke-item-2 search-item"></div>
-        <div class="info__search-form search-item">
-          <div class="info__search-input">
-            <input class="info__search-input-item" type="search" placeholder="Search your products...">
-          </div>
-          <div class="info__search-select">
-            <div class="info__search-select-item">
-              All Categories
+              </select>
               <span class="lnr lnr-chevron-down"></span>
             </div>
 
+            <button class=" info__search-button" type="submit">Search Now</button>
+
+
           </div>
 
-          <button class=" info__search-button" type="submit">Search Now</button>
-
-
+        </div>
+        <div class="info__wrapper">
+          <div class="info__title">
+            Create Your Own <br>
+            <span>Digital Product Marketplace</span>
+          </div>
+          <div class="info__subtitle">
+            MartPlace is the most powerful, & customizable template for Easy Digital Downloads
+            Products
+          </div>
+          <div class="info__links">
+            <a class="info__links-item" href="#">View All Products</a>
+            <a class="info__links-item" href="#">Popular Products</a>
+          </div>
         </div>
 
       </div>
-      <div class="info__wrapper">
-        <div class="info__title">
-          Create Your Own <br>
-          <span>Digital Product Marketplace</span>
-        </div>
-        <div class="info__subtitle">
-          MartPlace is the most powerful, & customizable template for Easy Digital Downloads
-          Products
-        </div>
-        <div class="info__links">
-          <a class="info__links-item" href="#">View All Products</a>
-          <a class="info__links-item" href="#">Popular Products</a>
-        </div>
-      </div>
+    </section>
 
-    </div>
-  </section>
-
-  <section class="advantages">
-    <div class="container">
-      <div class="advantages__wrapper">
-        <div class="advantages__item">
-          <img class="advantages__item-img" src="images/advantages/item-1.png" alt="">
-          <div class="advantages__item-title">Best UX Research</div>
-          <div class="advantages__item-text">
-            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-            scelerisque
-            the mattis, leo quam aliquet diam
-            congue is laoreet elit metus.
+    <section class="advantages">
+      <div class="container">
+        <div class="advantages__wrapper">
+          <div class="advantages__item">
+            <img class="advantages__item-img" src="images/advantages/item-1.png" alt="">
+            <div class="advantages__item-title">Best UX Research</div>
+            <div class="advantages__item-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </div>
           </div>
-        </div>
-        <div class="advantages__item">
-          <img class="advantages__item-img" src="images/advantages/item-2.png" alt="">
-          <div class="advantages__item-title">Fully Responsive</div>
-          <div class="advantages__item-text">
-            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-            scelerisque
-            the mattis, leo quam aliquet diam
-            congue is laoreet elit metus.
+          <div class="advantages__item">
+            <img class="advantages__item-img" src="images/advantages/item-2.png" alt="">
+            <div class="advantages__item-title">Fully Responsive</div>
+            <div class="advantages__item-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </div>
           </div>
-        </div>
-        <div class="advantages__item">
-          <img class="advantages__item-img" src="images/advantages/item-3.png" alt="">
-          <div class="advantages__item-title">Buy & Sell Easily</div>
-          <div class="advantages__item-text">
-            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
-            scelerisque
-            the mattis, leo quam aliquet diam
-            congue is laoreet elit metus.
+          <div class="advantages__item">
+            <img class="advantages__item-img" src="images/advantages/item-3.png" alt="">
+            <div class="advantages__item-title">Buy & Sell Easily</div>
+            <div class="advantages__item-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+              scelerisque
+              the mattis, leo quam aliquet diam
+              congue is laoreet elit metus.
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
 
-  <section class="product">
-    <div class="container">
-      <div class="product__wrapper">
-        <div class="product__top">
-          <div class="product__top-title">Weekly Featured Products</div>
-          <div class="product__top-arrows">
-            <div class="product__top-arrows-left top-arrows">
-              <span class="lnr lnr-chevron-left"></span>
-            </div>
-            <div class="product__top-arrows-right top-arrows">
-              <span class="lnr lnr-chevron-right"></span>
-            </div>
-          </div>
-        </div>
-        <div class="product-slider">
-          <div class="product__item">
-            <div class="product__item-image"></div>
-            <div class="product__item-info">
-              <div class="product__item-info-title">
-                One Page Resume Template
+    <section class="product">
+      <div class="container">
+        <div class="product__wrapper">
+          <div class="product__top">
+            <div class="product__top-title">Weekly Featured Products</div>
+            <div class="product__top-arrows">
+              <div class="product__top-arrows-left top-arrows">
+                <span class="lnr lnr-chevron-left"></span>
               </div>
-              <div class="product__item-info-person">
-                <div class="product__item-info-person-avatar"></div>
-                <div class="product__item-info-person-name">AazzTech</div>
-                <div class="product__item-info-person-platform">
-                  <span class="icon-wordpress"></span>
-                  WordPress
-                </div>
-              </div>
-              <div class="product__item-info-text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                leo quam aliquet congue justo ut scelerisque.
-              </div>
-              <div class="product__item-info-properties">
-                <div class="product__item-info-properties-category ">website</div>
-                <div class="product__item-info-properties-category ">plugin</div>
-                <div class="product__item-info-properties-category ">landing page</div>
-              </div>
-              <div class="product__item-info-data">
-                <div class="product__item-info-data-prise">$10 - $50</div>
-                <div class="product__item-info-data-likes">
-                  <span class="lnr lnr-heart"></span>
-                  46
-                </div>
-                <div class="product__item-info-data-buys">
-                  <span class="lnr lnr-cart"></span>
-                  634
-                </div>
-                <div class="product__item-info-data-stars stars-item"></div>
+              <div class="product__top-arrows-right top-arrows">
+                <span class="lnr lnr-chevron-right"></span>
               </div>
             </div>
           </div>
-          <div class="product__item">
-            <div class="product__item-image"></div>
-            <div class="product__item-info">
-              <div class="product__item-info-title">
-                One Page Resume Template
-              </div>
-              <div class="product__item-info-person">
-                <div class="product__item-info-person-avatar"></div>
-                <div class="product__item-info-person-name">AazzTech</div>
-                <div class="product__item-info-person-platform">
-                  <span class="icon-wordpress"></span>
-                  WordPress
+          <div class="product-slider">
+            <div class="product__item">
+              <div class="product__item-image"></div>
+              <div class="product__item-info">
+                <div class="product__item-info-title">
+                  One Page Resume Template
                 </div>
-              </div>
-              <div class="product__item-info-text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                leo quam aliquet congue justo ut scelerisque.
-              </div>
-              <div class="product__item-info-properties">
-                <div class="product__item-info-properties-category ">website</div>
-                <div class="product__item-info-properties-category ">plugin</div>
-                <div class="product__item-info-properties-category ">landing page</div>
-              </div>
-              <div class="product__item-info-data">
-                <div class="product__item-info-data-prise">$10 - $50</div>
-                <div class="product__item-info-data-likes">
-                  <span class="lnr lnr-heart"></span>
-                  46
-                </div>
-                <div class="product__item-info-data-buys">
-                  <span class="lnr lnr-cart"></span>
-                  634
-                </div>
-                <div class="product__item-info-data-stars stars-item"></div>
-              </div>
-            </div>
-          </div>
-          <div class="product__item">
-            <div class="product__item-image"></div>
-            <div class="product__item-info">
-              <div class="product__item-info-title">
-                One Page Resume Template
-              </div>
-              <div class="product__item-info-person">
-                <div class="product__item-info-person-avatar"></div>
-                <div class="product__item-info-person-name">AazzTech</div>
-                <div class="product__item-info-person-platform">
-                  <span class="icon-wordpress"></span>
-                  WordPress
-                </div>
-              </div>
-              <div class="product__item-info-text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                leo quam aliquet congue justo ut scelerisque.
-              </div>
-              <div class="product__item-info-properties">
-                <div class="product__item-info-properties-category ">website</div>
-                <div class="product__item-info-properties-category ">plugin</div>
-                <div class="product__item-info-properties-category ">landing page</div>
-              </div>
-              <div class="product__item-info-data">
-                <div class="product__item-info-data-prise">$10 - $50</div>
-                <div class="product__item-info-data-likes">
-                  <span class="lnr lnr-heart"></span>
-                  46
-                </div>
-                <div class="product__item-info-data-buys">
-                  <span class="lnr lnr-cart"></span>
-                  634
-                </div>
-                <div class="product__item-info-data-stars stars-item"></div>
-              </div>
-            </div>
-          </div>
-          <div class="product__item">
-            <div class="product__item-image"></div>
-            <div class="product__item-info">
-              <div class="product__item-info-title">
-                One Page Resume Template
-              </div>
-              <div class="product__item-info-person">
-                <div class="product__item-info-person-avatar"></div>
-                <div class="product__item-info-person-name">AazzTech</div>
-                <div class="product__item-info-person-platform">
-                  <span class="icon-wordpress"></span>
-                  WordPress
-                </div>
-              </div>
-              <div class="product__item-info-text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                leo quam aliquet congue justo ut scelerisque.
-              </div>
-              <div class="product__item-info-properties">
-                <div class="product__item-info-properties-category ">website</div>
-                <div class="product__item-info-properties-category ">plugin</div>
-                <div class="product__item-info-properties-category ">landing page</div>
-              </div>
-              <div class="product__item-info-data">
-                <div class="product__item-info-data-prise">$10 - $50</div>
-                <div class="product__item-info-data-likes">
-                  <span class="lnr lnr-heart"></span>
-                  46
-                </div>
-                <div class="product__item-info-data-buys">
-                  <span class="lnr lnr-cart"></span>
-                  634
-                </div>
-                <div class="product__item-info-data-stars stars-item"></div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="content">
-    <div class="container">
-      <div class="content__wrapper">
-        <div class="content__top">
-          <div class="content__top-title">
-            Newest Release Products
-          </div>
-          <div class="content__top-filter">
-            <div class="content__top-filter-text">
-              Filter by:
-            </div>
-            <div class="content__top-filter-points">
-              <span class="icon-ellipsis-v"></span>
-            </div>
-          </div>
-        </div>
-        <div class="content__inner">
-          <div class="content__inner-btn">
-            <button class="content__inner-btn-item" data-filter=".category-plugin" type="button">Plugins</button>
-            <button class="content__inner-btn-item" data-filter=".category-wordpress" type="button">WordPress</button>
-            <button class="content__inner-btn-item" data-filter=".category-html" type="button">Site Template</button>
-            <button class="content__inner-btn-item" data-filter=".category-psd" type="button">PSD Template</button>
-            <button class="content__inner-btn-item" data-filter=".category-joomla" type="button">Joomla</button>
-            <button class="content__inner-btn-item" data-filter=".category-interface" type="button">User
-              Interface</button>
-            <button class="content__inner-btn-item" data-filter=".category-landing" type="button">Landing Page</button>
-            <button class="content__inner-btn-item" data-filter=".category-software" type="button">Software</button>
-          </div>
-          <div class="content__inner-box">
-            <div class="content__item mix category-plugin">
-              <div class="content__item-image" style="background-image: url(images/content/bg-item.jpg);"></div>
-              <div class="content__item-info">
-                <div class="content__item-info-title">
-                  E-commerce Shopping Cart
-                </div>
-                <div class="content__item-info-person">
-                  <div class="content__item-info-person-avatar"></div>
-                  <div class="content__item-info-person-name">Theme-Valley</div>
-                  <div class="content__item-info-person-platform">
+                <div class="product__item-info-person">
+                  <div class="product__item-info-person-avatar"></div>
+                  <div class="product__item-info-person-name">AazzTech</div>
+                  <div class="product__item-info-person-platform">
                     <span class="icon-wordpress"></span>
-                    Plugin
+                    WordPress
                   </div>
                 </div>
-                <div class="content__item-info-text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                  the mattis, leo quam aliquet congue.
+                <div class="product__item-info-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                  aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                  mattis,
+                  leo quam aliquet congue justo ut scelerisque.
                 </div>
-                <div class="content__item-info-data">
-                  <div class="content__item-info-data-prise">$20</div>
-                  <div class="content__item-info-data-likes">
+                <div class="product__item-info-properties">
+                  <div class="product__item-info-properties-category ">website</div>
+                  <div class="product__item-info-properties-category ">plugin</div>
+                  <div class="product__item-info-properties-category ">landing page</div>
+                </div>
+                <div class="product__item-info-data">
+                  <div class="product__item-info-data-prise">$10 - $50</div>
+                  <div class="product__item-info-data-likes">
                     <span class="lnr lnr-heart"></span>
-                    56
+                    46
                   </div>
-                  <div class="content__item-info-data-stars-item-1 stars-item" style="display: none;"></div>
-                  <div class="content__item-info-data-buys">
+                  <div class="product__item-info-data-buys">
                     <span class="lnr lnr-cart"></span>
-                    246
+                    634
                   </div>
-
+                  <div class="product__item-info-data-stars stars-item"></div>
                 </div>
               </div>
             </div>
-            <div class="content__item mix category-psd">
-              <div class="content__item-image" style="background-image: url(images/content/bg-item.jpg);"></div>
-              <div class="content__item-info">
-                <div class="content__item-info-title">
-                  E-commerce Shopping Cart
+            <div class="product__item">
+              <div class="product__item-image"></div>
+              <div class="product__item-info">
+                <div class="product__item-info-title">
+                  One Page Resume Template
                 </div>
-                <div class="content__item-info-person">
-                  <div class="content__item-info-person-avatar"></div>
-                  <div class="content__item-info-person-name">Theme-Valley</div>
-                  <div class="content__item-info-person-platform">
+                <div class="product__item-info-person">
+                  <div class="product__item-info-person-avatar"></div>
+                  <div class="product__item-info-person-name">AazzTech</div>
+                  <div class="product__item-info-person-platform">
                     <span class="icon-wordpress"></span>
-                    PSD
+                    WordPress
                   </div>
                 </div>
-                <div class="content__item-info-text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                  the mattis, leo quam aliquet congue.
+                <div class="product__item-info-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                  aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                  mattis,
+                  leo quam aliquet congue justo ut scelerisque.
                 </div>
-                <div class="content__item-info-data">
-                  <div class="content__item-info-data-prise">$20</div>
-                  <div class="content__item-info-data-likes">
+                <div class="product__item-info-properties">
+                  <div class="product__item-info-properties-category ">website</div>
+                  <div class="product__item-info-properties-category ">plugin</div>
+                  <div class="product__item-info-properties-category ">landing page</div>
+                </div>
+                <div class="product__item-info-data">
+                  <div class="product__item-info-data-prise">$10 - $50</div>
+                  <div class="product__item-info-data-likes">
                     <span class="lnr lnr-heart"></span>
-                    56
+                    46
                   </div>
-                  <div class="content__item-info-data-stars-item-1 stars-item" style="display: none;"></div>
-                  <div class="content__item-info-data-buys">
+                  <div class="product__item-info-data-buys">
                     <span class="lnr lnr-cart"></span>
-                    246
+                    634
                   </div>
-
+                  <div class="product__item-info-data-stars stars-item"></div>
                 </div>
               </div>
             </div>
-            <div class="content__item mix category-html">
-              <div class="content__item-image" style="background-image: url(images/content/bg-item.jpg);"></div>
-              <div class="content__item-info">
+            <div class="product__item">
+              <div class="product__item-image"></div>
+              <div class="product__item-info">
+                <div class="product__item-info-title">
+                  One Page Resume Template
+                </div>
+                <div class="product__item-info-person">
+                  <div class="product__item-info-person-avatar"></div>
+                  <div class="product__item-info-person-name">AazzTech</div>
+                  <div class="product__item-info-person-platform">
+                    <span class="icon-wordpress"></span>
+                    WordPress
+                  </div>
+                </div>
+                <div class="product__item-info-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                  aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                  mattis,
+                  leo quam aliquet congue justo ut scelerisque.
+                </div>
+                <div class="product__item-info-properties">
+                  <div class="product__item-info-properties-category ">website</div>
+                  <div class="product__item-info-properties-category ">plugin</div>
+                  <div class="product__item-info-properties-category ">landing page</div>
+                </div>
+                <div class="product__item-info-data">
+                  <div class="product__item-info-data-prise">$10 - $50</div>
+                  <div class="product__item-info-data-likes">
+                    <span class="lnr lnr-heart"></span>
+                    46
+                  </div>
+                  <div class="product__item-info-data-buys">
+                    <span class="lnr lnr-cart"></span>
+                    634
+                  </div>
+                  <div class="product__item-info-data-stars stars-item"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="product__item-image"></div>
+              <div class="product__item-info">
+                <div class="product__item-info-title">
+                  One Page Resume Template
+                </div>
+                <div class="product__item-info-person">
+                  <div class="product__item-info-person-avatar"></div>
+                  <div class="product__item-info-person-name">AazzTech</div>
+                  <div class="product__item-info-person-platform">
+                    <span class="icon-wordpress"></span>
+                    WordPress
+                  </div>
+                </div>
+                <div class="product__item-info-text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                  aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                  mattis,
+                  leo quam aliquet congue justo ut scelerisque.
+                </div>
+                <div class="product__item-info-properties">
+                  <div class="product__item-info-properties-category ">website</div>
+                  <div class="product__item-info-properties-category ">plugin</div>
+                  <div class="product__item-info-properties-category ">landing page</div>
+                </div>
+                <div class="product__item-info-data">
+                  <div class="product__item-info-data-prise">$10 - $50</div>
+                  <div class="product__item-info-data-likes">
+                    <span class="lnr lnr-heart"></span>
+                    46
+                  </div>
+                  <div class="product__item-info-data-buys">
+                    <span class="lnr lnr-cart"></span>
+                    634
+                  </div>
+                  <div class="product__item-info-data-stars stars-item"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <div class="content__wrapper">
+          <div class="content__top">
+            <div class="content__top-title">
+              Newest Release Products
+            </div>
+            <div class="content__top-filter">
+              <div class="content__top-filter-text">
+                Filter by:
+              </div>
+              <div class="content__top-filter-points">
+                <span class="icon-ellipsis-v"></span>
+              </div>
+            </div>
+          </div>
+          <div class="content__inner">
+            <div class="content__inner-btn">
+              <button class="content__inner-btn-item" data-filter=".category-plugin" type="button">Plugins</button>
+              <button class="content__inner-btn-item" data-filter=".category-wordpress" type="button">WordPress</button>
+              <button class="content__inner-btn-item" data-filter=".category-html" type="button">Site Template</button>
+              <button class="content__inner-btn-item" data-filter=".category-psd" type="button">PSD Template</button>
+              <button class="content__inner-btn-item" data-filter=".category-joomla" type="button">Joomla</button>
+              <button class="content__inner-btn-item" data-filter=".category-interface" type="button">User
+                Interface</button>
+              <button class="content__inner-btn-item" data-filter=".category-landing" type="button">Landing
+                Page</button>
+              <button class="content__inner-btn-item" data-filter=".category-software" type="button">Software</button>
+            </div>
+            <div class="content__inner-box">
+              <div class="content__item mix category-plugin">
+                <div class="content__item-image" style=" ">
+                  <div class="content__item-image-buttons">
+                    <a class="content__item-image-bnt-1 content__image-bnt" href="#">More Info</a>
+                    <a class="content__item-image-bnt-2 content__image-bnt" href="#">Live Demo</a>
+                  </div>
+                </div>
+                <div class="content__item-info">
+                  <div class="content__item-info-title">
+                    E-commerce Shopping Cart
+                  </div>
+                  <div class="content__item-info-person">
+                    <div class="content__item-info-person-avatar"></div>
+                    <div class="content__item-info-person-name">Theme-Valley</div>
+                    <div class="content__item-info-person-platform">
+                      <span class="icon-wordpress"></span>
+                      Plugin
+                    </div>
+                  </div>
+                  <div class="content__item-info-text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.
+                  </div>
+                  <div class="content__item-info-data">
+                    <div class="content__item-info-data-prise">$10 - 50</div>
+                    <div class="content__item-info-data-likes">
+                      <span class="lnr lnr-heart"></span>
+                      56
+                    </div>
+                    <div class="content__item-info-data-stars-item-1 stars-item" style="    "></div>
+                    <div class="content__item-info-data-buys">
+                      <span class="lnr lnr-cart"></span>
+                      246
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content__item mix category-psd">
+                <div class="content__item-image" style="">
+                  <div class="content__item-image-buttons">
+                    <a class="content__item-image-bnt-1 content__image-bnt" href="#">More Info</a>
+                    <a class="content__item-image-bnt-2 content__image-bnt" href="#">Live Demo</a>
+                  </div>
+                </div>
+                <div class="content__item-info">
+                  <div class="content__item-info-title">
+                    E-commerce Shopping Cart
+                  </div>
+                  <div class="content__item-info-person">
+                    <div class="content__item-info-person-avatar"></div>
+                    <div class="content__item-info-person-name">Theme-Valley</div>
+                    <div class="content__item-info-person-platform">
+                      <span class="icon-wordpress"></span>
+                      PSD
+                    </div>
+                  </div>
+                  <div class="content__item-info-text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.
+                  </div>
+                  <div class="content__item-info-data">
+                    <div class="content__item-info-data-prise">$10 - 50</div>
+                    <div class="content__item-info-data-likes">
+                      <span class="lnr lnr-heart"></span>
+                      56
+                    </div>
+                    <div class="content__item-info-data-stars-item-1 stars-item" style="display: none;"></div>
+                    <div class="content__item-info-data-buys">
+                      <span class="lnr lnr-cart"></span>
+                      246
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content__item mix category-html">
+                <div class="content__item-image" style="">
+                  <div class="content__item-image-buttons">
+                    <a class="content__item-image-bnt-1 content__image-bnt" href="#">More Info</a>
+                    <a class="content__item-image-bnt-2 content__image-bnt" href="#">Live Demo</a>
+                  </div>
+                </div>
+                <div class="content__item-info">
+                  <div class="content__item-info-title">
+                    E-commerce Shopping Cart
+                  </div>
+                  <div class="content__item-info-person">
+                    <div class="content__item-info-person-avatar"></div>
+                    <div class="content__item-info-person-name">Theme-Valley</div>
+                    <div class="content__item-info-person-platform">
+                      <span class="icon-wordpress"></span>
+                      HTML
+                    </div>
+                  </div>
+                  <div class="content__item-info-text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.
+                  </div>
+                  <div class="content__item-info-data">
+                    <div class="content__item-info-data-prise">$20</div>
+                    <div class="content__item-info-data-likes">
+                      <span class="lnr lnr-heart"></span>
+                      56
+                    </div>
+                    <div class="content__item-info-data-stars-item-1 stars-item" style="display: none;"></div>
+                    <div class="content__item-info-data-buys">
+                      <span class="lnr lnr-cart"></span>
+                      246
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content__item mix category-plugin">
+                <div class="content__item-image" style="">
+                  <div class="content__item-image-buttons">
+                    <a class="content__item-image-bnt-1 content__image-bnt" href="#">More Info</a>
+                    <a class="content__item-image-bnt-2 content__image-bnt" href="#">Live Demo</a>
+                  </div>
+                </div>
+                <div class="content__item-info">
+                  <div class="content__item-info-title">
+                    E-commerce Shopping Cart
+                  </div>
+                  <div class="content__item-info-person">
+                    <div class="content__item-info-person-avatar"></div>
+                    <div class="content__item-info-person-name">Theme-Valley</div>
+                    <div class="content__item-info-person-platform">
+                      <span class="icon-wordpress"></span>
+                      Plugin
+                    </div>
+                  </div>
+                  <div class="content__item-info-text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.
+                  </div>
+                  <div class="content__item-info-data">
+                    <div class="content__item-info-data-prise">$20</div>
+                    <div class="content__item-info-data-likes">
+                      <span class="lnr lnr-heart"></span>
+                      56
+                    </div>
+                    <div class="content__item-info-data-stars-item-1 stars-item" style="display: none;"></div>
+                    <div class="content__item-info-data-buys">
+                      <span class="lnr lnr-cart"></span>
+                      246
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content__item mix category-psd">
+                <div class="content__item-image" style="">
+                  <div class="content__item-image-buttons">
+                    <a class="content__item-image-bnt-1 content__image-bnt" href="#">More Info</a>
+                    <a class="content__item-image-bnt-2 content__image-bnt" href="#">Live Demo</a>
+                  </div>
+                </div>
+                <div class="content__item-info">
+                  <div class="content__item-info-title">
+                    E-commerce Shopping Cart
+                  </div>
+                  <div class="content__item-info-person">
+                    <div class="content__item-info-person-avatar"></div>
+                    <div class="content__item-info-person-name">Theme-Valley</div>
+                    <div class="content__item-info-person-platform">
+                      <span class="icon-wordpress"></span>
+                      PSD
+                    </div>
+                  </div>
+                  <div class="content__item-info-text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                    the mattis, leo quam aliquet congue.
+                  </div>
+                  <div class="content__item-info-data">
+                    <div class="content__item-info-data-prise">$20</div>
+                    <div class="content__item-info-data-likes">
+                      <span class="lnr lnr-heart"></span>
+                      56
+                    </div>
+                    <div class="content__item-info-data-stars-item-1 stars-item" style="display: none;"></div>
+                    <div class="content__item-info-data-buys">
+                      <span class="lnr lnr-cart"></span>
+                      246
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content__item mix category-html">
+                <div class="content__item-image" style="">
+                  <div class="content__item-image-buttons">
+                    <a class="content__item-image-bnt-1 content__image-bnt" href="#">More Info</a>
+                    <a class="content__item-image-bnt-2 content__image-bnt" href="#">Live Demo</a>
+                  </div>
+                </div>
                 <div class="content__item-info-title">
                   E-commerce Shopping Cart
                 </div>
@@ -472,115 +614,19 @@
                     <span class="lnr lnr-cart"></span>
                     246
                   </div>
-
-                </div>
-              </div>
-            </div>
-            <div class="content__item mix category-plugin">
-              <div class="content__item-image" style="background-image: url(images/content/bg-item.jpg);"></div>
-              <div class="content__item-info">
-                <div class="content__item-info-title">
-                  E-commerce Shopping Cart
-                </div>
-                <div class="content__item-info-person">
-                  <div class="content__item-info-person-avatar"></div>
-                  <div class="content__item-info-person-name">Theme-Valley</div>
-                  <div class="content__item-info-person-platform">
-                    <span class="icon-wordpress"></span>
-                    Plugin
-                  </div>
-                </div>
-                <div class="content__item-info-text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                  the mattis, leo quam aliquet congue.
-                </div>
-                <div class="content__item-info-data">
-                  <div class="content__item-info-data-prise">$20</div>
-                  <div class="content__item-info-data-likes">
-                    <span class="lnr lnr-heart"></span>
-                    56
-                  </div>
-                  <div class="content__item-info-data-stars-item-1 stars-item" style="display: none;"></div>
-                  <div class="content__item-info-data-buys">
-                    <span class="lnr lnr-cart"></span>
-                    246
-                  </div>
-
-                </div>
-              </div>
-            </div>
-            <div class="content__item mix category-psd">
-              <div class="content__item-image" style="background-image: url(images/content/bg-item.jpg);"></div>
-              <div class="content__item-info">
-                <div class="content__item-info-title">
-                  E-commerce Shopping Cart
-                </div>
-                <div class="content__item-info-person">
-                  <div class="content__item-info-person-avatar"></div>
-                  <div class="content__item-info-person-name">Theme-Valley</div>
-                  <div class="content__item-info-person-platform">
-                    <span class="icon-wordpress"></span>
-                    PSD
-                  </div>
-                </div>
-                <div class="content__item-info-text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                  the mattis, leo quam aliquet congue.
-                </div>
-                <div class="content__item-info-data">
-                  <div class="content__item-info-data-prise">$20</div>
-                  <div class="content__item-info-data-likes">
-                    <span class="lnr lnr-heart"></span>
-                    56
-                  </div>
-                  <div class="content__item-info-data-stars-item-1 stars-item" style="display: none;"></div>
-                  <div class="content__item-info-data-buys">
-                    <span class="lnr lnr-cart"></span>
-                    246
-                  </div>
-
-                </div>
-              </div>
-            </div>
-            <div class="content__item mix category-html">
-              <div class="content__item-image" style="background-image: url(images/content/bg-item.jpg);"></div>
-              <div class="content__item-info">
-                <div class="content__item-info-title">
-                  E-commerce Shopping Cart
-                </div>
-                <div class="content__item-info-person">
-                  <div class="content__item-info-person-avatar"></div>
-                  <div class="content__item-info-person-name">Theme-Valley</div>
-                  <div class="content__item-info-person-platform">
-                    <span class="icon-wordpress"></span>
-                    HTML
-                  </div>
-                </div>
-                <div class="content__item-info-text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                  the mattis, leo quam aliquet congue.
-                </div>
-                <div class="content__item-info-data">
-                  <div class="content__item-info-data-prise">$20</div>
-                  <div class="content__item-info-data-likes">
-                    <span class="lnr lnr-heart"></span>
-                    56
-                  </div>
-                  <div class="content__item-info-data-stars-item-1 stars-item" style="display: none;"></div>
-                  <div class="content__item-info-data-buys">
-                    <span class="lnr lnr-cart"></span>
-                    246
-                  </div>
-
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
+
+
+
+  </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>

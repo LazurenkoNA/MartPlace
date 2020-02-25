@@ -59,7 +59,7 @@
     &-notifications {
       position: relative;
       display: flex;
-
+      margin-right: 18px;
       &-item-1 {
         margin-right: 30px;
         .notifications__ball-item {
@@ -90,18 +90,18 @@
     }
     .notifications__ball {
       color: #000;
-      &-item-1 {
+      &-alarm {
         top: -8px;
         right: 113px;
         background-color: $red;
       }
-      &-item-2 {
+      &-mail {
         top: -8px;
         right: 64px;
         padding: 3px 7px;
         background-color: $green;
       }
-      &-item-3 {
+      &-basket {
         top: -8px;
         right: 15px;
         padding: 3px 7px;
@@ -209,6 +209,7 @@
   position: relative;
   text-align: center;
   background-color: $blue-bg;
+
   color: $white;
   min-height: 725px;
   &__wrapper {
@@ -266,12 +267,12 @@
 
 .info__search {
   &-smoke-item-1 {
-    bottom: -50px;
+    bottom: -38px;
     max-width: 1080px;
     min-height: 135px;
   }
   &-smoke-item-2 {
-    bottom: -65px;
+    bottom: -53px;
     max-width: 1110px;
     min-height: 135px;
   }
@@ -279,7 +280,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    bottom: -80px;
+    bottom: -68px;
     max-width: 1140px;
     min-height: 135px;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
@@ -287,6 +288,8 @@
     z-index: 2;
   }
   &-input {
+    position: relative;
+    margin-right: 30px;
     margin-left: 40px;
     &-item {
       min-width: 805px;
@@ -294,6 +297,7 @@
       padding-left: 30px;
       border-radius: 4px;
       border-width: 1px;
+      border-style: solid;
       border-color: #dcdcdc;
       font-size: 16px;
       font-weight: 400;
@@ -301,22 +305,31 @@
     }
   }
   &-select {
-    position: relative;
+    position: absolute;
+    right: 300px;
     color: $dark-grey;
+    border-left: 1px solid #dcdcdc;
+
     &-item {
-      position: absolute;
-      top: -27px;
-      right: 10px;
+      top: -26px;
+      right: 31px;
       display: flex;
-      min-width: 200px;
-      min-height: 55px;
-      border-left: 1px solid #dcdcdc;
+      padding-left: 20px;
+      min-width: 195px;
+      min-height: 52px;
+      border: none;
       justify-content: center;
       align-items: center;
+      appearance: none;
       cursor: pointer;
+      outline: 0;
     }
-    span {
+    .lnr-chevron-down {
+      top: 19px;
+      right: 16px;
+      position: absolute;
       margin-left: 30px;
+      pointer-events: none;
     }
   }
   &-button {
@@ -440,13 +453,15 @@
       background-color: $dark-grey;
       min-width: 555px;
       min-height: 450px;
+      border-radius: 4px;
     }
     &-info {
       margin-top: 35px;
       padding: 0 50px;
       &-title {
         margin-bottom: 15px;
-        font-family: "Quicksand-Medium";
+        font-family: "Quicksand-Bold";
+        font-weight: 700;
         font-size: 24px;
       }
       &-person {
@@ -462,12 +477,25 @@
         }
         &-name {
           margin-right: 20px;
+          font-family: "Quicksand-Medium";
+          font-weight: 500;
+          color: #000;
+          cursor: pointer;
+          transition: all 0.3s;
+          &:hover {
+            opacity: 0.7;
+          }
         }
         &-platform {
+          color: $arrows;
+          cursor: pointer;
+          transition: all 0.3s;
           .icon-wordpress {
             margin-right: 6px;
           }
-          color: $arrows;
+          &:hover {
+            opacity: 0.7;
+          }
         }
       }
       &-text {
@@ -486,6 +514,7 @@
           border-radius: 50px;
           color: $placeholder;
           background-color: $smoke;
+          cursor: pointer;
         }
       }
       &-data {
@@ -501,6 +530,12 @@
           font-size: 15px;
           border-radius: 50px;
           background-color: $blue;
+          transition: all 0.3s;
+          cursor: pointer;
+          &:hover {
+            background-color: $smoke;
+            color: $blue;
+          }
         }
         &-likes {
           margin-right: 20px;
@@ -594,15 +629,56 @@
     margin: 30px 0;
     background-color: #fff;
     &-image {
+      position: relative;
       height: 230px;
       border-radius: 4px;
+      transition: background 1s;
+      background-image: linear-gradient(
+        90deg,
+        rgb(0, 150, 136) 0%,
+        rgb(0, 150, 136) 46%,
+        rgb(0, 150, 136) 100%
+      );
+      &-buttons {
+        padding-top: 90px;
+        margin: 0 45px;
+      }
+      .content__image-bnt {
+        display: none;
+        padding: 17px 30px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        font-family: "Quicksand-Medium";
+        font-weight: 500;
+        line-height: 15px;
+        font-size: 15px;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $blue;
+          background-color: #fff;
+        }
+      }
+      &-bnt-1 {
+        margin-right: 5px;
+      }
+      &-bnt-2 {
+      }
+
       &:hover {
-        background-image: -moz-linear-gradient(
-          180deg,
+        border-radius: 4px;
+        opacity: 1;
+        transition: all 0.3s;
+        background-image: linear-gradient(
+          90deg,
           rgb(6, 116, 236) 0%,
           rgb(61, 94, 215) 46%,
           rgb(115, 71, 193) 100%
         );
+        .content__image-bnt {
+          display: inline-block;
+        }
       }
     }
     &-info {
@@ -613,6 +689,11 @@
         font-family: "Quicksand-Medium";
         font-size: 20px;
         font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          opacity: 0.7;
+        }
       }
       &-person {
         padding: 0 30px;
@@ -626,15 +707,26 @@
           margin-right: 9px;
           background-color: $arrows;
           border-radius: 50%;
+          cursor: pointer;
         }
         &-name {
           margin-right: 20px;
+          cursor: pointer;
+          transition: all 0.3s;
+          &:hover {
+            opacity: 0.7;
+          }
         }
         &-platform {
+          color: $arrows;
+          cursor: pointer;
+          transition: all 0.3s;
           .icon-wordpress {
             margin-right: 6px;
           }
-          color: $arrows;
+          &:hover {
+            opacity: 0.7;
+          }
         }
       }
       &-text {
@@ -652,13 +744,14 @@
         align-items: center;
         &-prise {
           margin: 15px 20px 15px 0;
-          padding: 0 20px;
+          padding: 0 15px;
           color: $blue;
           font-family: "Quicksand-Medium";
           font-size: 15px;
           border-radius: 50px;
           background-color: $smoke;
           transition: all 0.3s;
+          cursor: pointer;
           &:hover {
             background-color: $blue;
             color: #fff;
@@ -667,12 +760,17 @@
         &-likes {
           display: flex;
           justify-content: center;
-          margin-right: 20px;
+          margin-right: 10px;
+          cursor: pointer;
+          transition: all 0.3s;
           span {
             display: block;
-            margin-top: 6px;
-            margin-right: 5px;
+            margin-top: 7px;
+            margin-right: 8px;
             color: $arrows;
+          }
+          &:hover {
+            opacity: 0.7;
           }
         }
         &-stars {
@@ -684,9 +782,11 @@
           display: flex;
           justify-content: flex-end;
           color: $blue;
+          cursor: pointer;
           span {
             display: block;
-            margin-top: 6px;
+            margin-top: 7px;
+            margin-right: 8px;
           }
         }
       }
