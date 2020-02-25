@@ -13,10 +13,19 @@ $(function() {
       "</svg>"
   });
 
-  $(".product-slider").slick({
+  $(".product__slider").slick({
     arrows: true,
     prevArrow: $(".product__top-arrows-left"),
     nextArrow: $(".product__top-arrows-right")
+  });
+
+  $(".followers__slider").slick({
+    arrows: true,
+    prevArrow: $(".followers__top-arrows-left"),
+    nextArrow: $(".followers__top-arrows-right"),
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1
   });
 
   // $(".info__search-select").styler({});

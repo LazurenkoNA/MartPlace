@@ -107,7 +107,7 @@
         padding: 3px 7px;
         background-color: $blue;
       }
-      .lnr {
+      span {
         font-size: 20px;
       }
     }
@@ -324,7 +324,7 @@
       cursor: pointer;
       outline: 0;
     }
-    .lnr-chevron-down {
+    span {
       top: 19px;
       right: 16px;
       position: absolute;
@@ -439,6 +439,10 @@
         width: 16px;
         color: #fff;
         cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          opacity: 0.7;
+        }
       }
     }
   }
@@ -490,7 +494,7 @@
           color: $arrows;
           cursor: pointer;
           transition: all 0.3s;
-          .icon-wordpress {
+          span {
             margin-right: 6px;
           }
           &:hover {
@@ -595,7 +599,7 @@
         color: $grey;
       }
       &-points {
-        .icon-ellipsis-v {
+        span {
           display: block;
           padding-top: 5px;
           margin-left: 25px;
@@ -695,9 +699,9 @@
         padding: 0 30px;
         margin-top: 20px;
         margin-bottom: 13px;
-        font-family: "Quicksand-Medium";
+        font-family: "Quicksand-Bold";
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 700;
         cursor: pointer;
         transition: all 0.3s;
         &:hover {
@@ -730,7 +734,7 @@
           color: $arrows;
           cursor: pointer;
           transition: all 0.3s;
-          .icon-wordpress {
+          span {
             margin-right: 6px;
           }
           &:hover {
@@ -827,4 +831,227 @@
 
 .stars-item {
 }
+
 // __________________--CONTENT--____________________
+
+// __________________++FOLLOWERS++____________________
+
+.followers {
+  padding-top: 120px;
+  background-color: $smoke;
+  &__wrapper {
+  }
+  &__top {
+    display: flex;
+    padding: 30px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    justify-content: space-between;
+    align-items: center;
+    &-title {
+      font-size: 30px;
+      line-height: 28px;
+    }
+    &-arrows {
+      position: relative;
+      min-width: 110px;
+      min-height: 45px;
+      border-radius: 50px;
+      background-color: $arrows;
+      &-left {
+        right: 75px;
+      }
+      &-right {
+        right: 17px;
+      }
+      .top-arrows {
+        display: inline-block;
+        position: absolute;
+        top: 8px;
+        bottom: 0;
+        margin: 0 auto;
+        height: 16px;
+        width: 16px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  &__slider {
+  }
+  &__item {
+    max-width: 365px;
+    min-height: 230px;
+    margin: 30px 0;
+    background-color: #fff;
+    &-image {
+      position: relative;
+      height: 230px;
+      border-radius: 4px;
+      transition: background 1s;
+      background-image: linear-gradient(
+        90deg,
+        rgb(0, 150, 136) 0%,
+        rgb(0, 150, 136) 46%,
+        rgb(0, 150, 136) 100%
+      );
+      &-buttons {
+        padding-top: 90px;
+        margin: 0 45px;
+      }
+      .followers__image-bnt {
+        display: none;
+        padding: 17px 30px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        font-family: "Quicksand-Medium";
+        font-weight: 500;
+        line-height: 15px;
+        font-size: 15px;
+        transition: all 0.3s;
+        &:hover {
+          color: $blue;
+          background-color: #fff;
+        }
+      }
+      &-bnt-1 {
+        margin-right: 5px;
+      }
+      &-bnt-2 {
+      }
+
+      &:hover {
+        border-radius: 4px;
+        opacity: 1;
+        background-image: linear-gradient(
+          90deg,
+          rgb(6, 116, 236) 0%,
+          rgb(61, 94, 215) 46%,
+          rgb(115, 71, 193) 100%
+        );
+        .followers__image-bnt {
+          display: inline-block;
+        }
+      }
+    }
+    &-info {
+      &-title {
+        padding: 0 30px;
+        margin-top: 20px;
+        margin-bottom: 13px;
+        font-family: "Quicksand-Bold";
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      &-person {
+        padding: 0 30px;
+        display: flex;
+        margin-bottom: 25px;
+        align-items: center;
+
+        &-avatar {
+          height: 30px;
+          width: 30px;
+          margin-right: 9px;
+          background-color: $arrows;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        &-name {
+          margin-right: 20px;
+          cursor: pointer;
+          transition: all 0.3s;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        &-platform {
+          color: $arrows;
+          cursor: pointer;
+          transition: all 0.3s;
+          span {
+            margin-right: 6px;
+          }
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+      &-text {
+        padding: 0 30px;
+        color: $dark-grey;
+        font-size: 16px;
+      }
+      &-data {
+        position: relative;
+        padding: 0 30px;
+        position: relative;
+        margin-top: 25px;
+        display: flex;
+        border-top: 1px solid #ececec;
+        align-items: center;
+        &-prise {
+          margin: 15px 20px 15px 0;
+          padding: 0 15px;
+          color: $blue;
+          font-family: "Quicksand-Medium";
+          font-size: 15px;
+          border-radius: 50px;
+          background-color: $smoke;
+          transition: all 0.3s;
+          cursor: pointer;
+          &:hover {
+            background-color: $blue;
+            color: #fff;
+          }
+        }
+        &-likes {
+          display: flex;
+          justify-content: center;
+          margin-right: 10px;
+          cursor: pointer;
+          transition: all 0.3s;
+          span {
+            display: block;
+            margin-top: 7px;
+            margin-right: 8px;
+            color: $arrows;
+          }
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        &-stars {
+        }
+        &-buys {
+          position: absolute;
+          top: 14px;
+          right: 26px;
+          display: flex;
+          justify-content: flex-end;
+          color: $blue;
+          cursor: pointer;
+          span {
+            display: block;
+            margin-top: 7px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// __________________--FOLLOWERS--____________________
