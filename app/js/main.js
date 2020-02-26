@@ -20,6 +20,7 @@ $(function() {
   });
 
   $(".followers__slider").slick({
+    rows: "0",
     arrows: true,
     prevArrow: $(".followers__top-arrows-left"),
     nextArrow: $(".followers__top-arrows-right"),

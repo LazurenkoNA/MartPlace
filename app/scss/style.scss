@@ -838,6 +838,7 @@
 
 .followers {
   padding-top: 120px;
+  padding-bottom: 80px;
   background-color: $smoke;
   &__wrapper {
   }
@@ -888,8 +889,9 @@
   &__item {
     max-width: 365px;
     min-height: 230px;
-    margin: 30px 0;
+    margin: 30px 14px;
     background-color: #fff;
+    outline: 0;
     &-image {
       position: relative;
       height: 230px;
@@ -907,7 +909,7 @@
       }
       .followers__image-bnt {
         display: none;
-        padding: 17px 30px;
+        padding: 17px 26px;
         color: #fff;
         border: 1px solid #fff;
         border-radius: 50px;
@@ -1055,3 +1057,146 @@
 }
 
 // __________________--FOLLOWERS--____________________
+
+// __________________++TOTAL++____________________
+
+.total {
+  padding: 100px 0;
+  background-color: $total-dark;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  &-img {
+    margin-bottom: 40px;
+    font-size: 48px;
+  }
+  &-number {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+  &-text {
+    color: #fff;
+    font-size: 18px;
+  }
+  &__item-1 {
+    text-align: center;
+    &-img {
+      color: $yellow;
+    }
+    &-number {
+      color: $yellow;
+    }
+  }
+
+  &__item-2 {
+    &-img {
+      color: $blue-2;
+    }
+    &-number {
+      color: $blue-2;
+    }
+  }
+
+  &__item-3 {
+    &-img {
+      color: $green-3;
+    }
+    &-number {
+      color: $green-3;
+    }
+  }
+
+  &__item-4 {
+    &-img {
+      color: $red;
+    }
+    &-number {
+      color: $red;
+    }
+  }
+}
+
+// __________________--TOTAL--____________________
+
+// __________________++DIGNITY++____________________
+
+.dignity {
+  padding-top: 120px;
+  padding-bottom: 100px;
+  background-color: $smoke;
+  &__wrapper {
+  }
+  &__top {
+    margin-bottom: 55px;
+    text-align: center;
+    &-title {
+      margin-bottom: 30px;
+      font-size: 36px;
+      span {
+        color: $blue;
+      }
+    }
+    &-text {
+      margin: 0 auto;
+      width: 675px;
+    }
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__item {
+    position: relative;
+    max-width: 360px;
+    max-height: 375px;
+    margin-bottom: 30px;
+    padding: 50px 30px;
+    text-align: center;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    &-number {
+      position: absolute;
+      top: 20px;
+      left: 15px;
+      font-family: "Quicksand-Light";
+      font-size: 48px;
+      font-weight: 300;
+      color: $blue-3;
+      opacity: 0.2;
+    }
+    &-image {
+      margin-bottom: 35px;
+      font-size: 60px;
+      &-license {
+        color: $blue;
+      }
+      &-wand {
+        color: $purple;
+      }
+      &-lock {
+        color: $green-3;
+      }
+      &-bars {
+        color: $yellow;
+      }
+      &-leaf {
+        color: $blue-2;
+      }
+      &-phone {
+        color: $red;
+      }
+    }
+    &-title {
+      margin-bottom: 22px;
+      font-size: 24px;
+    }
+    &-text {
+    }
+  }
+}
+
+// __________________--DIGNITY--____________________
