@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="343" viewBox="0 0 960 343">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #600a91;
+        fill-rule: evenodd;
+        opacity: 0.1;
+      }
+    </style>
+  </defs>
+  <path id="Shape_3_copy_2" data-name="Shape 3 copy 2" class="cls-1" d="M1917,7032.69S1387,7305.71,957,6874v343h960V7032.69Z" transform="translate(-957 -6874)"/>
+</svg>
