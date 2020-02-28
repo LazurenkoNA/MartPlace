@@ -29,16 +29,20 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?abbn4s");
-  src: url("../fonts/icomoon.eot?abbn4s#iefix") format("embedded-opentype"),
-    url("../fonts/icomoon.ttf?abbn4s") format("truetype"),
-    url("../fonts/icomoon.woff?abbn4s") format("woff"),
-    url("../fonts/icomoon.svg?abbn4s#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?gdu9ig");
+  src: url("../fonts/icomoon.eot?gdu9ig#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?gdu9ig") format("truetype"),
+    url("../fonts/icomoon.woff?gdu9ig") format("woff"),
+    url("../fonts/icomoon.svg?gdu9ig#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -51,9 +55,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-pinterest:before {
+  content: "\f0d2";
+}
+.icon-linkedin:before {
+  content: "\f0e1";
+}
 .icon-ellipsis-v:before {
   content: "\f142";
 }
+.icon-dribbble:before {
+  content: "\f17d";
+}
 .icon-wordpress:before {
   content: "\f19a";
+}
+.icon-google:before {
+  content: "\f1a0";
 }
