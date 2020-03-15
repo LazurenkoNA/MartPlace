@@ -1,7 +1,5 @@
 $(function() {
-  var mixer = mixitup(".content__inner-box");
-
-  $(".stars-item").rateYo({
+    $(".stars-item").rateYo({
     rating: 4.6,
     readOnly: false,
     spacing: "3px",
@@ -29,5 +27,15 @@ $(function() {
     slidesToScroll: 1
   });
 
-  // $(".info__search-select").styler({});
+  $(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 300,
+    from: 00,
+    to: 600,
+    prefix: "$"
+  });
+  
+    var mixer = mixitup(".content__inner-box");
+
 });
