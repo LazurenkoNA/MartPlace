@@ -1,5 +1,5 @@
 $(function() {
-    $(".stars-item").rateYo({
+  $(".stars-item").rateYo({
     rating: 4.6,
     readOnly: false,
     spacing: "3px",
@@ -35,7 +35,18 @@ $(function() {
     to: 600,
     prefix: "$"
   });
-  
-    var mixer = mixitup(".content__inner-box");
 
+  $(".product-page__top-filters-bar-grid").on("click", function() {
+    $(".product-page__item").removeClass("list");
+    $(".product-page__top-filters-bar-grid").addClass("active");
+    $(".product-page__top-filters-bar-list").removeClass("active");
+  });
+  
+  $(".product-page__top-filters-bar-list").on("click", function() {
+    $(".product-page__item").addClass("list");
+    $(".product-page__top-filters-bar-list").addClass("active");
+    $(".product-page__top-filters-bar-grid").removeClass("active");
+  });
+
+  var mixer = mixitup(".content__inner-box");
 });
